@@ -1,0 +1,176 @@
+#mainContainer {
+  width: 100vw;
+  height: 100vh;
+}
+
+#header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+#searchBox {
+  background-color: #f0f0f0;
+  width: 250px;
+  border-radius: 8%;
+}
+
+#logo {
+  height: 80px;
+  width: 220px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+#sidebar {
+  height: 100vh;
+  width: 15vw;
+  position: absolute;
+  top: 0;
+}
+
+.options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#optionsMenu {
+  font-weight: 500;
+}
+
+#account {
+  padding-right: 10px;
+}
+
+#payroll {
+  padding-right: 27px;
+}
+
+#reports {
+  padding-right: 20px;
+}
+
+#advisor {
+  padding-right: 22px;
+}
+
+#contacts {
+  padding-right: 15px;
+}
+
+#chartsMenu {
+  height: 88vh;
+  background-color: #f0f0f0;
+  width: 85vw;
+  position: relative;
+  left: 15vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.row1 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3px;
+  margin-top: 20px;
+}
+
+.row2 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3px;
+}
+
+.charts {
+  height: 280px;
+  width: 600px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#chart1 {
+  width: 580px;
+  height: 210px;
+  padding-top: 30px;
+  padding-left: 15px;
+}
+
+.chartHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#chart4Content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 20px;
+}
+
+.chart4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex;
+  align-items: flex-start;
+  row-gap: 15px;
+}
+
+h6 {
+  color: gray;
+}
+
+hr {
+  border-top: 0.5px solid #f3eeea;
+}
+
+.circle {
+  height: 12px;
+  width: 12px;
+  /* background-color: red; */
+  border-radius: 30%;
+}
+
+#inOut {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+  margin: 15px;
+}
+
+#fileUpload {
+  height: 400px;
+  width: 300px;
+  background-color: white;
+  position: absolute;
+  z-index: 100;
+  top: 90px;
+  left: 390px;
+  border-radius: 3%;
+  opacity: 95%;
+}
+
+#close {
+  position: relative;
+  left: 250px;
+}
+
+#upload {
+  position: relative;
+  top: 150px;
+  left: 20px;
+}
