@@ -21,7 +21,7 @@ export default function Chart3({ data }) {
       0,
       max(layers, (layer) => max(layer, (sequence) => sequence[1])),
     ];
-    console.log(extent);
+    // console.log(extent);
     const xScale = scaleBand()
       .domain(data.map((value) => value.month))
       .range([0, w])
