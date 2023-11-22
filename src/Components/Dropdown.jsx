@@ -3,13 +3,13 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
-export default function Dropdown({ genrateRandomNumbers, array, heading }) {
+export default function Dropdown({ randomizeDataForChart1, array, heading }) {
   return (
     <FormControl sx={{ m: 1, minWidth: 120, fontWeight: "bold" }} size="small">
       <InputLabel id="manage">
         <h5>{heading}</h5>
       </InputLabel>
-      <Select labelId="manage" onClick={genrateRandomNumbers} value={""}>
+      <Select labelId="manage" onClick={randomizeDataForChart1} value={""}>
         {array.map((value, index) => (
           <MenuItem key={index} value={`Options${index + 1}`}>
             {value}

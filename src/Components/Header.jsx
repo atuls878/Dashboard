@@ -5,9 +5,11 @@ import Paper from "@mui/material/Paper";
 import IconButton from "@mui/material/IconButton";
 import Avatar from "@mui/material/Avatar";
 import Badge from "@mui/material/Badge";
-export default function Header() {
+import Button from "@mui/material/Button";
+export default function Header({genrateRandomNumbers}) {
   return (
     <Paper square id="header">
+      <Button style={{backgroundColor:'#8DDFCB'}} onClick={genrateRandomNumbers}>Randomize Data</Button>
       <SearchBox />
       <Badge badgeContent={""} variant="dot" color="success" overlap="circular">
         <NotificationsIcon />

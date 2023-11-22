@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react";
 import { select, line, curveCardinal, axisBottom, scaleLinear } from "d3";
 import Dropdown from "./Dropdown";
 
-export default function Chart1({ data, genrateRandomNumbers }) {
+export default function Chart1({ data, randomizeDataForChart1 }) {
   const svgRef = useRef();
   
   useEffect(() => {
@@ -46,13 +46,13 @@ export default function Chart1({ data, genrateRandomNumbers }) {
           <h3>Checking Account</h3>
           <div>
             <Dropdown
-              genrateRandomNumbers={genrateRandomNumbers}
+              randomizeDataForChart1={randomizeDataForChart1}
               array={["Option1", "Option2"]}
               heading="Manage"
               
             />
             <Dropdown
-              genrateRandomNumbers={genrateRandomNumbers}
+              randomizeDataForChart1={randomizeDataForChart1}
               array={["Januaury", "February"]}
               heading="Januaury"
               

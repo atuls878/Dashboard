@@ -1,6 +1,6 @@
 import Paper from "@mui/material/Paper";
 
-export default function Chart4() {
+export default function Chart4({ stats }) {
   return (
     <>
       <Paper className="charts">
@@ -19,19 +19,15 @@ export default function Chart4() {
           </div>
           <div className="chart4">
             <h6>This Month</h6>
-            <h5>1,194.25</h5>
-            <h5>6789.02</h5>
-            <h5>4,689.89</h5>
-            <h5>0</h5>
-            <h5>7,366.12</h5>
+            {stats.map((value, index) => (
+              <h5 key={index}>{value["value1"]}</h5>
+            ))}
           </div>
           <div className="chart4">
             <h6>YTD</h6>
-            <h5>4,57,433.89</h5>
-            <h5>24,536.9</h5>
-            <h5>6,858</h5>
-            <h5>0</h5>
-            <h5>2,525</h5>
+            {stats.map((value, index) => (
+              <h5 key={index}>{value["value2"]}</h5>
+            ))}
           </div>
         </div>
       </Paper>
